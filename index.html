@@ -1,152 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuska Palit | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anuska Palit | ML & AI Portfolio</title>
 
-        body {
-            background: #0f172a;
-            color: #e5e7eb;
-            line-height: 1.6;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(135deg, #1e293b, #020617);
-        }
+<style>
+:root{
+    --bg:#0b1220;
+    --card:#121a2f;
+    --accent:#38bdf8;
+    --text:#e5e7eb;
+    --muted:#9ca3af;
+}
 
-        header h1 {
-            font-size: 3rem;
-            color: #38bdf8;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #cbd5f5;
-        }
+body{
+    background:var(--bg);
+    color:var(--text);
+}
 
-        section {
-            padding: 80px 10%;
-        }
+a{
+    color:var(--accent);
+    text-decoration:none;
+}
 
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #38bdf8;
-        }
+section{
+    padding:80px 8%;
+}
 
-        .about, .skills, .projects, .contact {
-            background: #020617;
-            margin-bottom: 40px;
-            border-radius: 12px;
-            padding: 40px;
-        }
+h2{
+    font-size:2.2rem;
+    margin-bottom:30px;
+    color:var(--accent);
+}
 
-        .skills ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            list-style: none;
-            gap: 15px;
-        }
+.card{
+    background:var(--card);
+    padding:30px;
+    border-radius:16px;
+    margin-bottom:30px;
+}
 
-        .skills li {
-            background: #1e293b;
-            padding: 12px;
-            border-radius: 8px;
-            text-align: center;
-        }
+.grid{
+    display:grid;
+    gap:20px;
+}
 
-        .projects .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#020617,#020617,#0b1220);
+}
 
-        .contact a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
+.hero h1{
+    font-size:3.5rem;
+    color:var(--accent);
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-            color: #94a3b8;
-        }
-    </style>
+.hero p{
+    margin-top:15px;
+    font-size:1.2rem;
+    color:var(--muted);
+}
+
+.badge{
+    display:inline-block;
+    padding:6px 14px;
+    background:#1e293b;
+    border-radius:20px;
+    margin:6px;
+    font-size:0.9rem;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:12px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.projects .project{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+}
+
+.socials a{
+    margin-right:15px;
+    font-weight:500;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:var(--muted);
+    background:#020617;
+}
+
+img.stats{
+    max-width:100%;
+    border-radius:12px;
+    margin-top:15px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
     <h1>Anuska Palit</h1>
-    <p>PhD Researcher | NLP | AI & Machine Learning</p>
-</header>
+    <p>Machine Learning Enthusiast • AI Researcher • Tech Creator</p>
+    <div style="margin-top:25px">
+        <span class="badge">Python</span>
+        <span class="badge">Machine Learning</span>
+        <span class="badge">NLP</span>
+        <span class="badge">Java</span>
+        <span class="badge">C# / .NET</span>
+    </div>
+</div>
 
+<!-- ABOUT -->
 <section>
-    <div class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a PhD researcher working in Natural Language Processing and AI-driven systems.
-            My interests include English-Hindi translation, recommendation systems,
-            anomaly detection, and applied machine learning.
-        </p>
-    </div>
+<div class="card">
+<h2>💫 About Me</h2>
+<p>
+Hello! I'm a proactive and enthusiastic learner with a strong interest in
+<b>Machine Learning, NLP, and recommendation systems</b>.
+I enjoy building real-world projects, working with data, and continuously
+expanding my technical skills.
+</p>
+<br>
+<p>
+📍 Phagwara, Punjab <br>
+🌐 Portfolio: <a href="https://portfolioanuska.netlify.app/" target="_blank">portfolioanuska.netlify.app</a>
+</p>
+</div>
+</section>
 
-    <div class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>NLP</li>
-            <li>Deep Learning</li>
-            <li>Data Science</li>
-            <li>SQL</li>
-            <li>C# / .NET</li>
-            <li>Research Writing</li>
-        </ul>
-    </div>
+<!-- SKILLS -->
+<section>
+<div class="card">
+<h2>💻 Tech Stack</h2>
 
-    <div class="projects">
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Cross-Lingual Semantic Search</h3>
-            <p>English–Hindi document retrieval using VSM and machine translation.</p>
-        </div>
-        <div class="card">
-            <h3>AI-Powered Log Anomaly Detection</h3>
-            <p>Dashboard for detecting irregular system logs using ML models.</p>
-        </div>
-        <div class="card">
-            <h3>Recommendation System</h3>
-            <p>E-commerce recommendations using fuzzy logic, neural networks, and clustering.</p>
-        </div>
-    </div>
+<h3>Languages & Web</h3>
+<div class="skills-grid">
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">C++</div>
+<div class="skill">C</div>
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+</div>
 
-    <div class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:anuskapalit@email.com">anuskapalit@email.com</a></p>
-        <p>GitHub: <a href="https://github.com/its-anuskapalit" target="_blank">its-anuskapalit</a></p>
-    </div>
+<br>
+
+<h3>ML / AI</h3>
+<div class="skills-grid">
+<div class="skill">TensorFlow</div>
+<div class="skill">PyTorch</div>
+<div class="skill">Keras</div>
+<div class="skill">scikit-learn</div>
+<div class="skill">NumPy</div>
+<div class="skill">Pandas</div>
+<div class="skill">SciPy</div>
+<div class="skill">Matplotlib</div>
+<div class="skill">Plotly</div>
+<div class="skill">mlflow</div>
+</div>
+
+<br>
+
+<h3>Tools & Platforms</h3>
+<div class="skills-grid">
+<div class="skill">Django</div>
+<div class="skill">Flutter</div>
+<div class="skill">MySQL</div>
+<div class="skill">Git</div>
+<div class="skill">Anaconda</div>
+<div class="skill">Netlify</div>
+<div class="skill">Figma</div>
+<div class="skill">Canva</div>
+<div class="skill">Blender</div>
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+<div class="card">
+<h2>🚀 Featured Projects</h2>
+
+<div class="grid">
+<div class="project">
+<h3>Recommendation Systems</h3>
+<p>ML-powered recommendation engines using collaborative filtering, fuzzy logic, and neural networks.</p>
+</div>
+
+<div class="project">
+<h3>Fault Detection & Prevention</h3>
+<p>Energy consumption anomaly detection using machine learning models.</p>
+</div>
+
+<div class="project">
+<h3>English ↔ Hindi Translation</h3>
+<p>Statistical Machine Translation project for bilingual document processing.</p>
+</div>
+
+<div class="project">
+<h3>Java GUI Applications</h3>
+<p>Desktop applications using Swing & AWT including games and management systems.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GITHUB STATS -->
+<section>
+<div class="card">
+<h2>📊 GitHub Stats</h2>
+
+<img class="stats" src="https://github-readme-stats.vercel.app/api?username=its-anuskapalit&show_icons=true&theme=tokyonight" alt="GitHub Stats">
+
+<img class="stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=its-anuskapalit&layout=compact&theme=tokyonight" alt="Top Languages">
+</div>
+</section>
+
+<!-- SOCIALS -->
+<section>
+<div class="card">
+<h2>🌐 Connect With Me</h2>
+<div class="socials">
+<a href="https://linkedin.com/in/anuska-palit" target="_blank">LinkedIn</a>
+<a href="https://instagram.com/_its.ap___" target="_blank">Instagram</a>
+<a href="#">Quora</a>
+<a href="#">Stack Overflow</a>
+<a href="#">Pinterest</a>
+</div>
+</div>
 </section>
 
 <footer>
-    © 2026 Anuska Palit | Built with ❤️ using GitHub Pages
+© 2026 Anuska Palit • Built with ❤️ for GitHub Pages
 </footer>
 
 </body>
